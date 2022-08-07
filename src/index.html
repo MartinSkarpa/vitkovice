@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link type="text/css" rel="stylesheet" href="./css/bootstrap/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/app/main.css"/>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-info">
@@ -43,15 +44,67 @@
     <main class="container">
         <section id="sectionAboutUs" class="p-3 mt-5">
             <h1>O nás</h1><!--TODO-->
+            <!--TODO Vyřeš problikávání kolotoče-->
+            <div class="carousel carousel-fade slide">
+                <div class="carousel-inner" data-bs-ride="carousel">
+                    <div class="carousel-item active">
+                        <img src="img/carousel_1.jpg" class="d-block w-100" alt="Slide one"/>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carousel_2.webp" class="d-block w-100" alt="Slide two"/>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carousel_3.jpg" class="d-block w-100" alt="Slide three"/>
+                    </div>
+                </div>
+            </div>
             <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec iaculis gravida nulla. In rutrum. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Aenean id metus id velit ullamcorper pulvinar. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Aliquam erat volutpat. Etiam quis quam. Fusce aliquam vestibulum ipsum. Nulla quis diam. Mauris dictum facilisis augue. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Ut tempus purus at lorem. Donec iaculis gravida nulla.
             </p>
         </section>
         <section id="sectionNews" class="p-3 bg-light">
             <h1>Novinky</h1><!--TODO-->
-            <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec iaculis gravida nulla. In rutrum. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Aenean id metus id velit ullamcorper pulvinar. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Aliquam erat volutpat. Etiam quis quam. Fusce aliquam vestibulum ipsum. Nulla quis diam. Mauris dictum facilisis augue. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Ut tempus purus at lorem. Donec iaculis gravida nulla.
-            </p>
+            <div class="row">
+                <article class="col-12 col-md-10 col-lg-8">
+                    <h2>Lorem ipsum dolor</h2>
+                    <p class="text-justify">
+                        <svg class="rounded mb-3 me-3 float-start" width="100" height="100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 200x200" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="25%" y="50%" fill="#dee2e6" dy=".3em">100x100</text></svg>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec iaculis gravida nulla. In rutrum. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Aenean id metus id velit ullamcorper pulvinar. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Aliquam erat volutpat. Etiam quis quam. Fusce aliquam vestibulum ipsum. Nulla quis diam. Mauris dictum facilisis augue. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor.
+                        <!--Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Ut tempus purus at lorem. Donec iaculis gravida nulla.-->
+                        <!--<br/>-->
+                        <a href="#" class="">Číst dále....</a><!--TODO-->
+                    </p>
+                </article>
+                <div class="w-100"></div>
+
+                <article class="col-12 col-md-10 col-lg-8 offset-md-2">
+                    <h2>Lorem ipsum dolor</h2>
+                    <p class="text-justify">
+                        <svg class="rounded mb-3 ms-3 float-end" width="100" height="100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 200x200" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="25%" y="50%" fill="#dee2e6" dy=".3em">100x100</text></svg>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec iaculis gravida nulla. In rutrum. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Aenean id metus id velit ullamcorper pulvinar. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Aliquam erat volutpat. Etiam quis quam. Fusce aliquam vestibulum ipsum. Nulla quis diam. Mauris dictum facilisis augue. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor.
+                        <!--Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Ut tempus purus at lorem. Donec iaculis gravida nulla.-->
+                        <!--<br/>-->
+                        <a href="#" class="ms-auto">Číst dále....</a><!--TODO-->
+                    </p>
+                </article>
+                <div class="w-100"></div>
+
+                <article class="col-12 col-md-10 col-lg-8">
+                    <h2>Lorem ipsum dolor</h2>
+                    <p class="text-justify">
+                        <svg class="rounded mb-3 me-3 float-start" width="100" height="100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 200x200" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="25%" y="50%" fill="#dee2e6" dy=".3em">100x100</text></svg>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec iaculis gravida nulla. In rutrum. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Aenean id metus id velit ullamcorper pulvinar. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Aliquam erat volutpat. Etiam quis quam. Fusce aliquam vestibulum ipsum. Nulla quis diam. Mauris dictum facilisis augue. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor.
+                        <!--Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Ut tempus purus at lorem. Donec iaculis gravida nulla.-->
+                        <!--<br/>-->
+                        <a href="#" class="">Číst dále....</a><!--TODO-->
+                    </p>
+                </article>
+                <div class="w-100"></div>
+
+                <div class="col-12">
+                    <a href="#" class="btn btn-primary">Starší příspěvky</a><!--TODO-->
+                </div>
+            </div>
         </section>
         <section id="sectionKidsPark" class="p-3 ">
             <h1>Dětský park</h1><!--TODO-->
@@ -79,6 +132,6 @@
         </section>
     </main>
 
-    <script type="application/javascript" src="./js/bootstrap/bootstrap.min.js"></script>
+    <script type="application/javascript" src="js/bootstrap/bootstrap.min.js"></script>
 </body>
 </html>
